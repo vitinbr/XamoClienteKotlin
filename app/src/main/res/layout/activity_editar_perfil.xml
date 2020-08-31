@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9"
+    tools:context=".ui.perfil.Editar_perfil">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_editar_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/rectangle_copy"
+        app:layout_constraintBottom_toTopOf="@+id/divisorPerfil5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome"
+            android:paddingLeft="16dp"
+            android:textColor="@color/colorAccent" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <View
+        android:id="@+id/divisorPerfil5"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="#E8E8E8"
+        app:layout_constraintBottom_toTopOf="@+id/txt_editar_telefone"
+        app:layout_constraintTop_toBottomOf="@+id/txt_editar_nome" />
+
+    <View
+        android:id="@+id/divisorPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="#E8E8E8"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout15"
+        app:layout_constraintTop_toBottomOf="@+id/txt_editar_telefone"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <View
+        android:id="@+id/divisorPerfil6"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="#E8E8E8"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout16"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout15"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <View
+        android:id="@+id/divisorPerfil7"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="#E8E8E8"
+        app:layout_constraintBottom_toTopOf="@+id/btnsalvardados"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout16"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_editar_telefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/rectangle_copy"
+        app:layout_constraintBottom_toTopOf="@+id/divisorPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divisorPerfil5">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefone"
+            android:paddingLeft="16dp"
+            android:shadowColor="@color/colorAccent" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout15"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/rectangle_copy"
+        app:layout_constraintBottom_toTopOf="@+id/divisorPerfil6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divisorPerfil">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:paddingLeft="16dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout16"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/rectangle_copy"
+        app:layout_constraintBottom_toTopOf="@+id/divisorPerfil7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divisorPerfil6">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CPF"
+            android:paddingLeft="16dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnsalvardados"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/buttons_large_amarelo"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divisorPerfil7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

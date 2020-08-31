@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.xamoclientekotlin">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.loja.activity_loja_mesma_categoria"></activity>
+        <activity android:name=".ui.activity.activity_suporte" />
+        <activity android:name=".ui.activity.activity_avalicao" />
+        <activity android:name=".ui.activity.sobre_app" />
+        <activity android:name=".ui.pedidos.Fazer_pedido" />
+        <activity android:name=".ui.perfil.Editar_perfil" />
+        <activity android:name=".ui.pedidos.Detalhe_pedido" />
+        <activity android:name=".ui.loja.Categoria_lojas" />
+        <activity android:name=".ui.activity.Endereco_activity" />
+        <activity android:name=".ui.activity.Detalhes_produto" />
+        <activity android:name="com.example.timelineview.Rastreio_pedido" />
+        <activity android:name=".ui.loja.Detalhes_loja" />
+        <activity android:name=".ui.cadastro.Cadastro_Activity" />
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
